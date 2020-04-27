@@ -27,7 +27,7 @@ class SchemaDao
     {
         $schemaBuilder = Builder::new($pool);
         $columnsDetail = $schemaBuilder->getColumnsDetail($table);
-
+        $schemaBuilder->grammar->phpMap['decimal'] = $schemaBuilder->grammar::STRING;
         foreach ($columnsDetail as &$column) {
             $originPHPType = $schemaBuilder->convertType($column['type']);
 
