@@ -19,6 +19,8 @@ use Swoft\Db\Eloquent\Model;
  */
 class {= entityName} extends Model
 {
+    use \App\Model\Dao\{= entityName}Dao;
+
 {= properties | raw }
 
 {= methods | raw }
