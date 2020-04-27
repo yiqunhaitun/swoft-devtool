@@ -1,7 +1,7 @@
 {
-  "name": "swoft/devtool",
+  "name": "yiqunhaitun/swoft-devtool",
   "type": "library",
-  "version": "v2.0.9",
+  "version": "v2.10.0",
   "keywords": [
     "php",
     "swoole",
